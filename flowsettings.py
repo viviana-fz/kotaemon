@@ -283,13 +283,18 @@ SETTINGS_REASONING = {
     },
     "lang": {
         "name": "Language",
-        "value": "en",
-        "choices": [("English", "en"), ("Japanese", "ja"), ("Vietnamese", "vi")],
+        "value": "es",
+        "choices": [
+            ("English", "en"),
+            ("Japanese", "ja"),
+            ("Vietnamese", "vi"),
+            ("Spanish", "es"),
+        ],
         "component": "dropdown",
     },
     "max_context_length": {
         "name": "Max context length (LLM)",
-        "value": 32000,
+        "value": 50000,
         "component": "number",
     },
 }

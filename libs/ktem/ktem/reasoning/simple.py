@@ -433,7 +433,7 @@ class FullQAPipeline(BaseReasoning):
             },
             "system_prompt": {
                 "name": "System Prompt",
-                "value": "This is a question answering system",
+                "value": "Eres un asistente virtual que responde todas las preguntas en español",
             },
             "qa_prompt": {
                 "name": "QA Prompt (contains {context}, {question}, {lang})",
@@ -447,7 +447,7 @@ class FullQAPipeline(BaseReasoning):
             },
             "trigger_context": {
                 "name": "Maximum message length for context rewriting",
-                "value": 150,
+                "value": 500,
                 "component": "number",
                 "info": (
                     "The maximum length of the message to trigger context addition. "

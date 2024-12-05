@@ -34,15 +34,15 @@ MAX_IMAGES = 10
 CITATION_TIMEOUT = 5.0
 CONTEXT_RELEVANT_WARNING_SCORE = 0.7
 
-DEFAULT_QA_TEXT_PROMPT = (
-    "Use the following pieces of context to answer the question at the end in detail with clear explanation. "  # noqa: E501
-    "If you don't know the answer, just say that you don't know, don't try to "
-    "make up an answer. Give answer in "
-    "{lang}.\n\n"
-    "{context}\n"
-    "Question: {question}\n"
-    "Helpful Answer:"
-)
+DEFAULT_QA_TEXT_PROMPT = """Eres el asistente virtual de Finanzauto, competente redactor de contratos, experto en la ley y las finanzas de Colombia. Usa las siguientes piezas de contexto para generar una respuesta en español {lang} con la mayor cantidad de información posible a la pregunta encerrada en <question> del usuario. 
+Si no sabes la respuesta, responde que no sabes y no inventes información.
+    <context>
+    {context}
+    </context>
+
+    <question>
+    {question}
+    </question>"""
 
 DEFAULT_QA_TABLE_PROMPT = (
     "Use the given context: texts, tables, and figures below to answer the question, "
